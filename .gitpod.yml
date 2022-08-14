@@ -4,6 +4,9 @@ tasks:
       source venv/bin/activate
       pip install --upgrade pip
       pip install -r requirements.txt
+  - before:
+      source venv/bin/activate
+
 ports:
   - port: 5000
     onOpen: open-preview
@@ -16,3 +19,4 @@ vscode:
     - dracula-theme.theme-dracula
     - enkia.tokyo-night
     - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
